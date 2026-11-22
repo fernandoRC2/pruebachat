@@ -27,7 +27,7 @@ services:
     container_name: pruebachat_ollama_pull
     environment:
       - OLLAMA_HOST=http://ollama:11434
-    command: ["pull", "llama3"]
+    command: ["pull", "qwen2.5:3b"]
     restart: "no"
     depends_on:
       ollama:

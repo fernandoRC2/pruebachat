@@ -204,7 +204,7 @@
 
   // Debe ser >= spring.http.client.read-timeout del backend. Una inferencia de
   // llama3 en CPU puede tardar minutos la primera vez.
-  const TIMEOUT_MS = 180000;
+  const TIMEOUT_MS = 300000;
 
   // sessionId estable por pestaña: el backend ya lo acepta y lo registra en logs.
   const SESSION_ID = (crypto.randomUUID?.() || String(Date.now()));
